@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up - The Code Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="trial1.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>The Code Review</h1>
+    </header>
+
+    <div class="main">
+      <h2>Signup for our newsletter</h2>
+      <h3>Get the latest news on how your code is doing right in your inbox</h3>
+
+    </div>
+
+
+      <form action="index.html" method="post">
+        <hr style="height:.3em;">
+        <hr style="height:.1em;">
+        <fieldset>
+          <legend>Contact Information<legend><br>
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Required" required="required" id="name" name="user_name"><br>
+            <label for="mail">Email Address</label>
+            <input type="email" placeholder="Required" required="required" id="mail" name="user_email"><br>
+            <label for="phone_number">Phone Number</label>
+            <input type="text" id="number" name="user_phone_number"><br>
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address"><br>
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city"><br>
+            <label for="state">State</label>
+              <select id="state" name="user-state">
+              <option hidden>Select State</option>
+              <optgroup label="Happy Land">
+                <option value="la_la_land">La La Land</option>
+                <option value="unicorn_land">Unicorn Land</option>
+                <option value="billionaire_land">Billionaire Land</option>
+              </optgroup>
+              <optgroup label="Reality Strikes">
+                <option value="act">Australian Capital Territory</option>
+                <option value="nsw">New South Wales</option>
+                <option value="vic">Victoria</option>
+              </optgroup>
+              </select><br>
+            <label for="zip_code">Zip Code</label>
+            <input type="text" id="zip_code" name="user_zip_code">
+        </fieldset>
+
+        <hr style="height:.1em";>
+
+        <fieldset>
+          <legend>Newsletter</legend>
+            <h5>Select the newsletters you would like to receive</h5>
+            <input type="checkbox" id="html_news" value="html_newsletter" name="user_interest">
+            <label class="html" for="html_news">HTML News</label></br>
+            <input type="checkbox" id="css_news" value="css_newsletter" name="user_interest">
+            <label class="css" for="css_news">CSS News</label></br>
+            <input type="checkbox" id="javascript_news" value="javascript_newsletter" name="user_interest">
+            <label class="javascript" for="javascript_news">Javascript News</label>
+
+
+          <h5>Newsletter format</h5>
+          <input type="radio" id="html" name="newsletter_format"><label for="html_type"> HTML</label></br>
+          <input type="radio" id="plain_text" name="newsletter_format"><label for="text_type"> Plain text</label>
+
+          <h5>Other topics you'd like to hear about</h5>
+          <textarea id="topic" name="user_topic"></textarea><br>
+          <button type="submit" class="sign_up">Sign Up</button>
+        </fieldset>
+
+    <footer>
+      <h3>Copyright The Code Review</h3>
+    </footer>
+  </body>
+</html>
