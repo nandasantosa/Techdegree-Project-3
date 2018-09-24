@@ -94,11 +94,15 @@ footer{
 }
 
 @media (min-width: 768px){
+  
+  form{ 
+    width: 50%;
+  }
 
   legend,
   input[type="text"],
   input[type="email"]
   {
-    display: inline-block;
+    
   }
 }
