@@ -97,12 +97,13 @@ footer{
   
   form{ 
     width: 50%;
+    margin: auto;
   }
 
   legend,
   input[type="text"],
   input[type="email"]
   {
-    
+   padding: 
   }
 }
