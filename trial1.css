@@ -47,23 +47,24 @@ legend{
 }
 
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+option,
+select{
   height: 1.2em;
   background-color: lightgrey;
   color: black;
   border-radius: .3em;
   padding: 10px;
-  margin: 10px;
-}
-
-label{
-  padding-right: 30px;
+  margin-top : 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 select{
-  padding: 6px;
-  margin: 0;
+  height: 3em;
+  width: 100%;
 }
+
 input[type="checkbox"],
 input[type="radio"]{
   margin: 10px;
@@ -93,22 +94,11 @@ footer{
 }
 
 @media (min-width: 768px){
-  form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-  }
 
-  legend{
-    display: flex;
-  }
-
+  legend,
   input[type="text"],
   input[type="email"]
-  input[type="checkbox"],
-  input[type="radio"]{
-    flex: 1;
+  {
+    display: inline-block;
   }
-
 }
