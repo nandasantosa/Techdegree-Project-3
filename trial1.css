@@ -46,6 +46,7 @@ legend{
   border-style: none;
 }
 
+
 input[type="text"],
 input[type="email"],
 option,
@@ -57,7 +58,7 @@ select{
   padding: 10px;
   margin-top : 10px;
   margin-bottom: 10px;
-  width: 100%;
+  min-width: 320px;
 }
 
 select{
@@ -69,6 +70,11 @@ input[type="checkbox"],
 input[type="radio"]{
   margin: 10px;
   cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
 }
 
 textarea{
@@ -91,23 +97,27 @@ footer{
 
 .sign-up{
   font-size: 1.2em;
-}
+ }
 
 @media (min-width: 768px){
-  
-  form{ 
+
+  form{
     width: 50%;
     margin: auto;
   }
 
-  label{
-  
+  li{
+    display: flex;
   }
-  
-  legend,
-  input[type="text"],
-  input[type="email"]
-  {
-   padding: 
+
+  li label{
+    margin: auto;
+    flex: 1 150px;
+    max-width: 150px;
+  }
+
+  li input,
+  li select{
+    flex: 2 550px;
   }
 }
