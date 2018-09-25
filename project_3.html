@@ -4,7 +4,7 @@
     <title>Sign Up - The Code Review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./project_3.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" type="text/css" rel="stylesheet">
   </head>
 
   <body>
@@ -16,7 +16,6 @@
     <div class="main">
       <h2>Signup for our newsletter</h2>
       <h3>Get the latest news on how your code is doing right in your inbox</h3>
-
     </div>
 
 
@@ -35,8 +34,8 @@
               <input type="email" placeholder="Required" required="required" id="mail" name="user_email"><br>
             </li>
             <li>
-              <label for="number">Phone Number</label>
-              <input type="text" id="number" name="user_phone_number"><br>
+              <label for="telephone">Phone Number</label>
+              <input type="tel" id="telephone" name="telephone"><br>
             </li>
             <li>
               <label for="address">Street Address</label>
@@ -44,12 +43,12 @@
             </li>
             <li>
               <label for="city">City</label>
-              <input type="text" id="city" name="user_city"><br>
+              <input type="text" placeholder="Required" required="required" id="city" name="user_city"><br>
             </li>
             <li>
               <label for="state">State</label>
                 <select id="state" name="user-state">
-                <option hidden>Select State</option>
+                <option hidden>Choose State</option>
                 <optgroup label="Happy Land">
                   <option value="la_la_land">La La Land</option>
                   <option value="unicorn_land">Unicorn Land</option>
@@ -87,6 +86,7 @@
           <input type="radio" id="plain_text" name="newsletter_format"><label for="plain_text"> Plain text</label>
 
           <h5>Other topics you'd like to hear about</h5>
+          <label for="topic"></label>
           <textarea id="topic" name="user_topic"></textarea><br>
           <button type="submit" class="sign_up">Sign Up</button>
         </fieldset>
